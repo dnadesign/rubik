@@ -31,15 +31,14 @@ Rubik
 
 ## Markup needed
 
-<div class="carousel clearfix">
-	<div class="carousel_item">
-		anything you like in here
+	<div class="carousel clearfix">
+		<div class="carousel_item">
+			anything you like in here
+		</div>
+		<div class="carousel_item">
+			anything you like in here
+		</div>
 	</div>
-	<div class="carousel_item">
-		anything you like in here
-	</div>
-</div>
-
 
 ## Options
 * autoStart: false,
