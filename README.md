@@ -1,7 +1,7 @@
 Rubik
 =====
 
-# Responsive jQuery Carousel
+Responsive jQuery Carousel
 
 ## Features
 * One or multiple carousel items per page
