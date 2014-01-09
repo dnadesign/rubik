@@ -1,0 +1,140 @@
+/* =============================================================================
+	Carousel
+	========================================================================== */
+
+.carousel {
+	margin: 0 auto;
+	position: relative;
+}
+
+.carousel_holder {
+	overflow: hidden;
+	padding-top: 0;
+	position: relative;
+}
+
+.carousel_page {
+	float: left;
+	height: 100%;
+	position: relative;
+	width: 100%;
+}
+
+/* Next & Prev */
+.carousel_previous,
+.carousel_next {
+	background: url("/images/carousel_controls_xsmall.png") no-repeat center 0px;
+	cursor: pointer;
+	display: none;
+	height: 0;
+	margin-top: -19px;
+	overflow: hidden;
+	padding-top: 38px; /*p*/
+	position: absolute;
+	top: 50%;
+	opacity: 0.6;
+	width: 40px; /*p*/
+
+	.transition-property(all, .2s, ease-out);
+
+	&:focus,
+	&:hover,
+	&.hover {
+		opacity: 1;
+	}
+}
+
+.no-js .carousel_previous,
+.no-js .carousel_next {
+	display: none
+}
+
+.carousel_previous {
+	left: 0;
+}
+
+.no-touch .carousel_previous:hover,
+.carousel_previous:active {
+	background-position: center 0px; /*p*/
+}
+
+.carousel_next {
+	background-position: center -79px; /*p*/
+	right: 0;
+}
+
+.no-touch .carousel_next:hover,
+.carousel_next:active {
+	background-position: center -79px; /*p*/
+}
+
+/* Pager */
+.carousel_pager {
+	margin: 0;
+	height: 40px;
+	padding: 0.5em 0;
+	text-align: center;
+	position:absolute;
+	width:100%;
+}
+
+.no-js .carousel_pager {
+	display: none;
+}
+
+.carousel_pager li {
+	display: inline-block;
+	height: 40px;
+	margin: 0;
+	padding: 0;
+}
+
+.carousel_pager li:before {
+	display: none;
+}
+
+.carousel_pager li .a {
+	background: transparent url(/images/carousel_indicators.png) no-repeat 14px 14px;
+	border: none;
+	cursor: pointer;
+	display: inline-block;
+	height: 35px;
+	overflow: hidden;
+	text-indent: 101%;
+	white-space: nowrap;
+	width: 35px; /*p*/
+}
+
+.no-touch .carousel_pager li .a:hover {
+	background-position: -16px 14px; /*p*/
+}
+
+.carousel_pager li .a.active,
+.carousel_pager li .a.active:hover {
+	background-position: -16px 14px; /*p*/
+}
+
+/* Carousel Items */
+.carousel .carousel_items {
+	left: 0;
+	top: 0;
+	width: 100%;
+	overflow:hidden;
+}
+
+.carousel_item {
+	display: none;
+	float: left;
+	height: 100%;
+	position: relative;
+	width: 100%;
+	zoom: 1;
+}
+
+.carousel_item:first-child {
+	display: block;
+}
+
+.carousel_ready .carousel_item {
+	display: block;
+}
